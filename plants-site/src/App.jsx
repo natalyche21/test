@@ -2,6 +2,7 @@ import PlantCard from "./components/PlantCard";
 
 const plantsData = [
   {
+    id: "zamioculcas",
     name: "Замиокулькас",
     images: [
       "/images/zamioculcas1.jpg",
@@ -27,6 +28,7 @@ const plantsData = [
     ],
   },
   {
+    id: "calathea",
     name: "Калатея",
     images: [
       "/images/calathea1.jpg",
@@ -52,6 +54,7 @@ const plantsData = [
     ],
   },
   {
+    id: "chamaedorea",
     name: "Хамедорея",
     images: [
       "/images/chamaedorea1.jpg",
@@ -77,6 +80,7 @@ const plantsData = [
     ],
   },
   {
+    id: "aglaonema",
     name: "Аглонема",
     images: [
       "/images/aglaonema1.jpg",
@@ -133,8 +137,8 @@ function App() {
 
         <div className="row justify-content-center">
           <div className="col-lg-10">
-            {plantsData.map((plant, index) => (
-              <PlantCard key={index} plant={plant} />
+            {plantsData.map((plant) => (
+              <PlantCard key={plant.id} plant={plant} />
             ))}
           </div>
         </div>
