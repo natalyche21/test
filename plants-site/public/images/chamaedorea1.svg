@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1b5e20"/>
+      <stop offset="50%" style="stop-color:#2e7d32"/>
+      <stop offset="100%" style="stop-color:#4caf50"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:rgba(255,255,255,0.1)"/>
+      <stop offset="100%" style="stop-color:rgba(255,255,255,0)"/>
+    </radialGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="350" fill="url(#bg)"/>
+  <rect width="800" height="350" fill="url(#glow)"/>
+  
+  <!-- Decorative leaf patterns -->
+  <g opacity="0.1" fill="white">
+    <ellipse cx="100" cy="80" rx="40" ry="60" transform="rotate(-30 100 80)"/>
+    <ellipse cx="700" cy="100" rx="35" ry="50" transform="rotate(25 700 100)"/>
+    <ellipse cx="650" cy="280" rx="45" ry="65" transform="rotate(-15 650 280)"/>
+    <ellipse cx="150" cy="300" rx="30" ry="45" transform="rotate(40 150 300)"/>
+    <ellipse cx="400" cy="50" rx="25" ry="40" transform="rotate(-10 400 50)"/>
+  </g>
+  
+  <!-- Plant emoji -->
+  <text x="400" y="130" text-anchor="middle" font-size="100" filter="url(#shadow)">🌴</text>
+  
+  <!-- Plant name -->
+  <text x="400" y="200" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="white" font-weight="bold" filter="url(#shadow)">chamaedorea</text>
+  
+  <!-- Subtitle -->
+  <text x="400" y="245" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="rgba(255,255,255,0.85)">Бамбуковая пальма</text>
+  
+  <!-- Photo number -->
+  <text x="400" y="310" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="rgba(255,255,255,0.5)">Фото 1 из 3</text>
+</svg>

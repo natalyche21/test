@@ -1,7 +1,16 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npm create *)"
+      "Bash(npm create *)",
+      "Bash(mkdir *)",
+      "Bash(curl *)",
+      "Bash(type *)",
+      "Bash(taskkill *)",
+      "Bash(npm run *)",
+      "Bash(powershell *)",
+      "Bash(node *)",
+      "Bash(ren *)",
+      "Bash(copy *)"
     ]
   },
   "$version": 3
