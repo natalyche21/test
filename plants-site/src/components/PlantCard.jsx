@@ -27,7 +27,7 @@ function PlantCard({ plant }) {
           <h3>💧 Уход</h3>
           <ul>
             {care.map((item, index) => (
-              <li key={index}>{item}</li>
+              <li key={`${name}-care-${index}`}>{item}</li>
             ))}
           </ul>
         </div>
@@ -36,7 +36,7 @@ function PlantCard({ plant }) {
           <h3>🐛 Вредители и болезни</h3>
           <ul className="pest-list">
             {pests.map((item, index) => (
-              <li key={index}>{item}</li>
+              <li key={`${name}-pest-${index}`}>{item}</li>
             ))}
           </ul>
         </div>
